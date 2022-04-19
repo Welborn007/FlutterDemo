@@ -22,7 +22,23 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Image.asset("images/splash.jpg"),
+        child: Stack(
+          children: <Widget>[
+            Container(
+              alignment: Alignment.center,
+              child: Image.asset("images/splash.jpg"),
+            ),
+            Container(
+                alignment: Alignment.bottomCenter,
+                child: Text(
+                  'Copyright © 2022 Vasai Birds v2.7',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.normal,
+                      fontSize: 18.0),
+                )),
+          ],
+        ),
       ),
     );
   }
