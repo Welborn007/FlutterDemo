@@ -1,4 +1,4 @@
-# flutter_projects
+# Vasai Birds
 
 Vasai Birds Hybrid Flutter app.
 
