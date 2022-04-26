@@ -54,6 +54,14 @@ flutter:
   uses-material-design: true
   assets:
    - images/splash.jpg
+   - images/dove.png
+   - images/clipboard.png
+   - images/map.png
+   - images/balance-scale.png
+   - images/newspaper-folded.png
+   - images/call.png
+   - images/group.png
+   - images/refer.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

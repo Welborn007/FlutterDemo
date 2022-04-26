@@ -64,28 +64,82 @@ class MyStatelessWidget extends StatelessWidget {
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
-          children: const <Widget>[
+          children: <Widget>[
             DrawerHeader(
-              decoration: BoxDecoration(color: const Color(0xFF347235)),
-              child: Text(
-                'Vasai birds',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
+              child: Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Vasai birds',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
                 ),
               ),
+              decoration: BoxDecoration(color: const Color(0xFF347235)),
             ),
             ListTile(
-              leading: Icon(Icons.message),
-              title: Text('Messages'),
+              leading: SizedBox(
+                  height: 30.0,
+                  width: 30.0, // fixed width and height
+                  child: Image.asset("images/dove.png")),
+              title: Text('All Birds'),
             ),
+            Divider(),
             ListTile(
-              leading: Icon(Icons.account_circle),
-              title: Text('Profile'),
+              leading: SizedBox(
+                  height: 30.0,
+                  width: 30.0, // fixed width and height
+                  child: Image.asset("images/clipboard.png")),
+              title: Text('Life List'),
             ),
+            Divider(),
             ListTile(
-              leading: Icon(Icons.settings),
-              title: Text('Settings'),
+              leading: SizedBox(
+                  height: 30.0,
+                  width: 30.0, // fixed width and height
+                  child: Image.asset("images/map.png")),
+              title: Text('Bird Topography'),
+            ),
+            Divider(),
+            ListTile(
+              leading: SizedBox(
+                  height: 30.0,
+                  width: 30.0, // fixed width and height
+                  child: Image.asset("images/balance-scale.png")),
+              title: Text('Birding Ethics'),
+            ),
+            Divider(),
+            ListTile(
+              leading: SizedBox(
+                  height: 30.0,
+                  width: 30.0, // fixed width and height
+                  child: Image.asset("images/newspaper-folded.png")),
+              title: Text('News'),
+            ),
+            Divider(),
+            ListTile(
+              leading: SizedBox(
+                  height: 30.0,
+                  width: 30.0, // fixed width and height
+                  child: Image.asset("images/group.png")),
+              title: Text('The Team'),
+            ),
+            Divider(),
+            ListTile(
+              leading: SizedBox(
+                  height: 30.0,
+                  width: 30.0, // fixed width and height
+                  child: Image.asset("images/refer.png")),
+              title: Text('References & Credits'),
+            ),
+            Divider(),
+            ListTile(
+              leading: SizedBox(
+                  height: 30.0,
+                  width: 30.0, // fixed width and height
+                  child: Image.asset("images/call.png")),
+              title: Text('Contact Us'),
             ),
           ],
         ),
