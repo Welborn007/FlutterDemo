@@ -66,15 +66,79 @@ class MyStatelessWidget extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              child: Container(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Vasai birds',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
-                ),
+              child: new Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: new Container(
+                    height: 100.0,
+                    child: Column(children: <Widget>[
+                      Expanded(
+                        child: Row(
+                          children: <Widget>[
+                            Image(
+                              image: AssetImage("images/ic_launcher.png"),
+                              height: 50,
+                            ),
+                            Text('Vasai birds',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                ))
+                          ],
+                        ),
+                      ),
+                      Spacer(),
+                      Expanded(
+                        child: Row(
+                          children: <Widget>[
+                            Image(
+                              image: AssetImage("images/ic_launcher.png"),
+                              height: 10,
+                            ),
+                            Text('Vasai birds',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ))
+                          ],
+                          mainAxisAlignment: MainAxisAlignment.start,
+                        ),
+                      ),
+                      Expanded(
+                        child: Row(
+                          children: <Widget>[
+                            Image(
+                              image: AssetImage("images/ic_launcher.png"),
+                              height: 10,
+                            ),
+                            Text('Vasai birds',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ))
+                          ],
+                          mainAxisAlignment: MainAxisAlignment.start,
+                        ),
+                      ),
+                      Expanded(
+                        child: Row(
+                          children: <Widget>[
+                            Image(
+                              image: AssetImage("images/ic_launcher.png"),
+                              height: 10,
+                            ),
+                            Text('Vasai birds',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ))
+                          ],
+                          mainAxisAlignment: MainAxisAlignment.start,
+                        ),
+                      )
+                    ])),
               ),
               decoration: BoxDecoration(color: const Color(0xFF347235)),
             ),
